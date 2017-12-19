@@ -31,7 +31,10 @@ public class WordCountActivity extends AppCompatActivity {
         String text = sentenceEditText.getText().toString();
         Log.d(getClass().toString(), "The sentence was '" + text + "'");
         WordCount wordcount = new WordCount();
-        String sentence = sentenceEditText.getText().toString();
-        answerCount.setText(wordcount.countWords(sentence));
+//        String sentence = sentenceEditText.getText().toString();
+//        answerCount.setText(Integer.toString(wordcount.countWords(sentence)));
+//         OR
+        int sentence = wordcount.countWords(text);
+        answerCount.setText(Integer.toString(sentence));
     }
 }

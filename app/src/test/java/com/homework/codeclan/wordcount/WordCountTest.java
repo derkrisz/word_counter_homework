@@ -22,6 +22,6 @@ public class WordCountTest {
 
     @Test
     public void canCountWords() {
-        assertEquals("8", wordCounter.countWords("This is a text to count the words"));
+        assertEquals(8, wordCounter.countWords("This is a text to count the words"));
     }
 }
